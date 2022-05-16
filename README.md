@@ -6,9 +6,9 @@
 
 The script has 2 mandatory arguments to be defined when running, and 1 optional argument.
 
-    **-b** - specify S3 bucket name, where the search is needed
-    **-s** - specify the substring you would like to search.
-    *-p*   - specify AWS profile to use for the session if it differs from "default"
+    -b - specify S3 bucket name, where the search is needed
+    -s - specify the substring you would like to search.
+    -p - [OPTIONAL] specify AWS profile to use for the session if it differs from "default"
 
 Python `--help` snippet
 ```
