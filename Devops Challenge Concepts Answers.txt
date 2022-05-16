@@ -1,0 +1,29 @@
+﻿Infrastructure as Code.
+Infrastructure as Code (IaC) is the process of managing infrastructure, i.e. creation, deployment and maintenance in a programmatic, descriptive, and declarative way, when all configuration files are stored  in a source control system. The IaC model spawns the same environment every time it is applied, thus it solves the problem of environment drift and inconsistency. Infrastructure as Code in addition lowers the cost of infrastructure management by automating tasks, speeds up environment setup, minimizes the risk of error, as well as provides better ways for validation and tracking. 
+Unfortunately, I can not provide the alternatives to IaC, as at the moment, this is the one of core tenets of DevOps methodology. However, there are a lot of  alternatives among the tools that are used in IaC automation. The most well-known and used among them are Terraform and AWS CloudFormation.
+
+
+
+
+Observability.
+Observability is an indicator of how effectively can be determined the internal state of a system, as well as its behavior based on this system input and output data (telemetry).  It includes three main components -  telemetry data - that can be aggregated and analyzed to understand the state of the system: metrics, traces and logs.
+The entities that we will observe should be defined in collaboration with the developers team. Nevertheless, such crucial targets as application availability or overall health of the system, and resources consumption should always be included by default in every observability solution.
+
+
+Microservice architecture main challenges are:
+* Services communication: since each microservice is isolated, special care is required in constructing competent communication between them. Also as the number of services increases, the complexity of building the communication between them will also increase.
+* Increasing the number of services enlarges the number of databases with which these services interact, because, unlike a monolithic architecture, microservices use more than one common database.
+* The complexity of testing: first you need to deal with each service individually, and then test the correct interaction with other microservices.
+* Monitoring of microservice architecture is pretty complex to set up and more costly to support than monitoring of monolithic application.
+
+
+
+
+Security.
+I would not try to reinvent the wheel, and prefer to follow best-practice guidance, as well as AWS Well-Architected Framework for architecting secure workloads on AWS. In concrete action it will reflected in implementing security foundations principles:
+* Strong identity foundation: 
+To implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with AWS resources. Basically, it means that every user at AWS will have such permissions, and could assume only such roles, that will keep this user in the boundaries of his or her immediate task.
+* Enable traceability: 
+Monitor, alert, and audit actions and changes to AWS environment in real time (Arguably this action requires lots of details that should be taken into account: the budget, compliances and audits requirements etc.)
+* Zero Trust security model:
+This model requires users and systems to strongly prove their identities and trustworthiness, and enforces fine-grained identity-based authorization rules before allowing them to access applications, data, and other systems.
